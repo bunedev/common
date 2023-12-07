@@ -1,5 +1,5 @@
 {
-  "name": "common",
+  "name": "bune-common",
   "module": "index.ts",
   "type": "module",
   "main": "index.ts",
@@ -8,11 +8,28 @@
   },
   "files": [
     "index.js",
+    "all-exceptions.ts",
+    "graphql-errors.ts",
     "index.ts",
     "tsconfig.json",
     "package.json"
   ],
   "devDependencies": {
     "@types/node": "^20.10.4"
-  }
+  },
+  "description": "common lib for bune cms",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bunedev/common.git"
+  },
+  "author": "devhoangkien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bunedev/common/issues"
+  },
+  "homepage": "https://github.com/bunedev/common#readme"
 }
