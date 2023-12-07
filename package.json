@@ -1,0 +1,18 @@
+{
+  "name": "common",
+  "module": "index.ts",
+  "type": "module",
+  "main": "index.ts",
+  "dependencies": {
+    "graphql": "^16.8.1"
+  },
+  "files": [
+    "index.js",
+    "index.ts",
+    "tsconfig.json",
+    "package.json"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.10.4"
+  }
+}
