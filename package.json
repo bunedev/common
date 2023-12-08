@@ -1,6 +1,6 @@
 {
   "name": "bune-common",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "module": "index.ts",
   "type": "module",
   "main": "index.ts",
@@ -8,6 +8,9 @@
     "graphql": "^16.8.1"
   },
   "files": [
+    "constants/errors.ts",
+    "constants/validation.ts",
+    "pipes/validation.ts",
     "index.js",
     "all-exceptions.ts",
     "graphql-errors.ts",

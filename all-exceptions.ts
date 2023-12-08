@@ -67,7 +67,6 @@ export class GqlAllExceptionsFilter implements GqlExceptionFilter {
     }
 
     const logOutput = `Error: ${message} Status: ${status} messageCode: ${messageCode} stacktrace: ${stacktrace}`;
-    this.logger.error(logOutput);
     this.logToFile(logOutput);
   }
 }
