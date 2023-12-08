@@ -12,3 +12,22 @@ export function createGraphQLError(
     },
   });
 }
+
+export type ErrorType = {
+  property: string,
+  message: string,
+  errorCode: number,
+  developerNote?: string
+}
+
+export function validateGraphqlError(
+  errors: ErrorType[]
+): GraphQLError {
+  return new GraphQLError("Invalid Validation", {
+    extensions: {
+      status: 400,
+      errors,
+      code: "INVALID_VALIDATION"
+    },
+  });
+}
