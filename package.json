@@ -11,6 +11,7 @@
     "constants/errors.ts",
     "constants/validation.ts",
     "pipes/validation.ts",
+    "utils/random.ts",
     "index.js",
     "all-exceptions.ts",
     "graphql-errors.ts",

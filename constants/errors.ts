@@ -31,7 +31,11 @@ export const ErrorCodes = {
   UserExisted: 100004,
   UserCreateFailed: 100005,
   UserUpdateFailed: 100006,
-  UserNotActive: 100007
+  UserNotActive: 100007,
+  UserSuspended: 100008,
+  UserLocked: 100009,
+  UserClosed: 100010,
+  UserArchived: 100011
   // other errors
 };
 
@@ -67,6 +71,10 @@ export const ErrorMessages = {
   UserExisted: 'User Existed',
   UserCreateFailed: 'User create failed',
   UserUpdateFailed: 'User update failed',
-  UserNotActive: 'Account Not Active'
+  UserNotActive: 'Account Not Active',
+  UserSuspended: 'The account has been temporarily disabled. Please contact us if you have any questions!',
+  UserLocked: 'The account is locked, possibly due to multiple failed login attempts or security concerns. Please try again later or contact us for support.',
+  UserClosed: 'The account has been permanently closed, either by the user or by the system. Please contact us if you have any questions.',
+  UserArchived: ' The account is no longer active but has been archived for record-keeping purposes. Please contact us if you have any questions.'
   // other errors
 };
