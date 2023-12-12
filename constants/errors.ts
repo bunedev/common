@@ -35,7 +35,9 @@ export const ErrorCodes = {
   UserSuspended: 100008,
   UserLocked: 100009,
   UserClosed: 100010,
-  UserArchived: 100011
+  UserArchived: 100011,
+  AccountNotRegister: 100012,
+  InvalidOTP: 100013
   // other errors
 };
 
@@ -75,6 +77,8 @@ export const ErrorMessages = {
   UserSuspended: 'The account has been temporarily disabled. Please contact us if you have any questions!',
   UserLocked: 'The account is locked, possibly due to multiple failed login attempts or security concerns. Please try again later or contact us for support.',
   UserClosed: 'The account has been permanently closed, either by the user or by the system. Please contact us if you have any questions.',
-  UserArchived: ' The account is no longer active but has been archived for record-keeping purposes. Please contact us if you have any questions.'
+  UserArchived: ' The account is no longer active but has been archived for record-keeping purposes. Please contact us if you have any questions.',
+  AccountNotRegister: 'Account is not registered!',
+  InvalidOTP: 'OTP Invalid'
   // other errors
 };
