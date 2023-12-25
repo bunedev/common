@@ -1,5 +1,4 @@
 import { Field, InputType, Float } from "@nestjs/graphql";
-import { ApiProperty } from "@nestjs/swagger";
 import { IsOptional } from "class-validator";
 import { Type } from "class-transformer";
 
@@ -8,10 +7,7 @@ import { Type } from "class-transformer";
   description: undefined,
 })
 export class FloatNullableFilter {
-  @ApiProperty({
-    required: false,
-    type: Number,
-  })
+ 
   @IsOptional()
   @Field(() => Float, {
     nullable: true,
@@ -19,10 +15,7 @@ export class FloatNullableFilter {
   @Type(() => Number)
   equals?: number | null;
 
-  @ApiProperty({
-    required: false,
-    type: [Number],
-  })
+ 
   @IsOptional()
   @Field(() => [Float], {
     nullable: true,
@@ -30,10 +23,7 @@ export class FloatNullableFilter {
   @Type(() => Number)
   in?: number[] | null;
 
-  @ApiProperty({
-    required: false,
-    type: [Number],
-  })
+ 
   @IsOptional()
   @Field(() => [Float], {
     nullable: true,
@@ -41,10 +31,6 @@ export class FloatNullableFilter {
   @Type(() => Number)
   notIn?: number[] | null;
 
-  @ApiProperty({
-    required: false,
-    type: Number,
-  })
   @IsOptional()
   @Field(() => Float, {
     nullable: true,
@@ -52,10 +38,7 @@ export class FloatNullableFilter {
   @Type(() => Number)
   lt?: number;
 
-  @ApiProperty({
-    required: false,
-    type: Number,
-  })
+
   @IsOptional()
   @Field(() => Float, {
     nullable: true,
@@ -63,10 +46,7 @@ export class FloatNullableFilter {
   @Type(() => Number)
   lte?: number;
 
-  @ApiProperty({
-    required: false,
-    type: Number,
-  })
+ 
   @IsOptional()
   @Field(() => Float, {
     nullable: true,
@@ -74,10 +54,7 @@ export class FloatNullableFilter {
   @Type(() => Number)
   gt?: number;
 
-  @ApiProperty({
-    required: false,
-    type: Number,
-  })
+  
   @IsOptional()
   @Field(() => Float, {
     nullable: true,
@@ -85,10 +62,7 @@ export class FloatNullableFilter {
   @Type(() => Number)
   gte?: number;
 
-  @ApiProperty({
-    required: false,
-    type: Number,
-  })
+
   @IsOptional()
   @Field(() => Float, {
     nullable: true,

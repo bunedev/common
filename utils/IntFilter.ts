@@ -8,10 +8,7 @@ import { Type } from "class-transformer";
   description: undefined,
 })
 export class IntFilter {
-  @ApiProperty({
-    required: false,
-    type: Number,
-  })
+  
   @IsOptional()
   @Field(() => Int, {
     nullable: true,
@@ -19,10 +16,7 @@ export class IntFilter {
   @Type(() => Number)
   equals?: number;
 
-  @ApiProperty({
-    required: false,
-    type: [Number],
-  })
+
   @IsOptional()
   @Field(() => [Int], {
     nullable: true,
@@ -30,10 +24,7 @@ export class IntFilter {
   @Type(() => Number)
   in?: number[];
 
-  @ApiProperty({
-    required: false,
-    type: [Number],
-  })
+  
   @IsOptional()
   @Field(() => [Int], {
     nullable: true,
@@ -41,10 +32,7 @@ export class IntFilter {
   @Type(() => Number)
   notIn?: number[];
 
-  @ApiProperty({
-    required: false,
-    type: Number,
-  })
+ 
   @IsOptional()
   @Field(() => Int, {
     nullable: true,
@@ -52,10 +40,7 @@ export class IntFilter {
   @Type(() => Number)
   lt?: number;
 
-  @ApiProperty({
-    required: false,
-    type: Number,
-  })
+  
   @IsOptional()
   @Field(() => Int, {
     nullable: true,
@@ -63,10 +48,7 @@ export class IntFilter {
   @Type(() => Number)
   lte?: number;
 
-  @ApiProperty({
-    required: false,
-    type: Number,
-  })
+ 
   @IsOptional()
   @Field(() => Int, {
     nullable: true,
@@ -74,10 +56,7 @@ export class IntFilter {
   @Type(() => Number)
   gt?: number;
 
-  @ApiProperty({
-    required: false,
-    type: Number,
-  })
+
   @IsOptional()
   @Field(() => Int, {
     nullable: true,
@@ -85,10 +64,7 @@ export class IntFilter {
   @Type(() => Number)
   gte?: number;
 
-  @ApiProperty({
-    required: false,
-    type: Number,
-  })
+ 
   @IsOptional()
   @Field(() => Int, {
     nullable: true,

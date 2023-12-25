@@ -1,5 +1,4 @@
 import { Field, InputType } from "@nestjs/graphql";
-import { ApiProperty } from "@nestjs/swagger";
 import { IsOptional } from "class-validator";
 import { Type } from "class-transformer";
 
@@ -8,10 +7,7 @@ import { Type } from "class-transformer";
   description: undefined,
 })
 export class BooleanFilter {
-  @ApiProperty({
-    required: false,
-    type: Boolean,
-  })
+
   @IsOptional()
   @Field(() => Boolean, {
     nullable: true,
@@ -19,10 +15,7 @@ export class BooleanFilter {
   @Type(() => Boolean)
   equals?: boolean;
 
-  @ApiProperty({
-    required: false,
-    type: Boolean,
-  })
+ 
   @IsOptional()
   @Field(() => Boolean, {
     nullable: true,
