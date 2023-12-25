@@ -1,6 +1,6 @@
 {
   "name": "bune-common",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "module": "index.ts",
   "type": "module",
   "main": "index.ts",
@@ -34,7 +34,8 @@
     "graphql-errors.ts",
     "index.ts",
     "tsconfig.json",
-    "package.json"
+    "package.json",
+    "./FindManyArgs.ts"
   ],
   "devDependencies": {
     "@types/node": "^20.10.4"
