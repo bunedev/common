@@ -1,6 +1,6 @@
 {
   "name": "bune-common",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "module": "index.ts",
   "type": "module",
   "main": "index.ts",
@@ -13,6 +13,7 @@
     "constants",
     "pipes/validation.ts",
     "utils/random.ts",
+    "utils/prisma.util.ts",
     "index.js",
     "all-exceptions.ts",
     "graphql-errors.ts",
