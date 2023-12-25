@@ -37,8 +37,13 @@ export const ErrorCodes = {
   UserClosed: 100010,
   UserArchived: 100011,
   AccountNotRegister: 100012,
-  InvalidOTP: 100013
+  InvalidOTP: 100013,
+  // Post Errors
+  PostNotFound: 200000,
+  PostExisted: 200001
+
   // other errors
+
 };
 
 // Object for Error Messages
@@ -79,6 +84,10 @@ export const ErrorMessages = {
   UserClosed: 'The account has been permanently closed, either by the user or by the system. Please contact us if you have any questions.',
   UserArchived: ' The account is no longer active but has been archived for record-keeping purposes. Please contact us if you have any questions.',
   AccountNotRegister: 'Account is not registered!',
-  InvalidOTP: 'OTP Invalid'
+  InvalidOTP: 'OTP Invalid',
+  // Post Errors
+  PostNotFound: 'Post does not exist!',
+  PostExisted: 'Post exited!'
   // other errors
+
 };

@@ -1,6 +1,6 @@
 {
   "name": "bune-common",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "module": "index.ts",
   "type": "module",
   "main": "index.ts",
@@ -10,6 +10,7 @@
   "files": [
     "constants/errors.ts",
     "constants/validation.ts",
+    "utils",
     "constants",
     "pipes/validation.ts",
     "utils/random.ts",
