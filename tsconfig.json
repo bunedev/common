@@ -6,6 +6,7 @@
     "moduleResolution": "Node",
     "moduleDetection": "force",
     "allowImportingTsExtensions": true,
+    "baseUrl": "./",
     "noEmit": true,
     "composite": true,
     "strict": true,
