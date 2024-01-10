@@ -3,17 +3,29 @@ import * as path from 'path';
 import { Catch, ArgumentsHost, Logger } from '@nestjs/common';
 import { GqlArgumentsHost, GqlExceptionFilter } from '@nestjs/graphql';
 import { GraphQLError } from 'graphql';
-import { write } from "bun";
+import { promisify } from 'util';
 
-
+const mkdir = promisify(mkdirSync);
+const append = promisify(appendFile);
 @Catch()
 export class GqlAllExceptionsFilter implements GqlExceptionFilter {
   private readonly logger = new Logger(GqlAllExceptionsFilter.name);
-  private logFilePath = path.join('logs/error.log');
-
+  private logFilePath = path.join(`logs/${new Date().getFullYear()}/${new Date().getMonth()+1}/${new Date().getDate()}.log`);
   private async logToFile(message: string) {
     const logMessage = `${new Date().toISOString()} - ${message}\n`;
-    await write(this.logFilePath, logMessage);
+
+    // Check if the log file exists, and create it if it doesn't
+    if (!existsSync(this.logFilePath)) {
+      const logsDirectory = path.dirname(this.logFilePath);
+
+      try {
+        mkdir(logsDirectory, { recursive: true });
+      } catch (error) {
+        console.error(`Failed to create logs directory: ${error}`);
+      }
+    }
+
+    await append(this.logFilePath, logMessage);
   }
 
   catch(exception: unknown, host: ArgumentsHost) {
