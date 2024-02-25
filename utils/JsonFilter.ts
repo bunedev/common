@@ -12,12 +12,12 @@ export class JsonFilter {
   @Field(() => GraphQLJSONObject, {
     nullable: true,
   })
-  equals?: GraphQLJSONObject;
+  equals?: typeof GraphQLJSONObject;
 
 
   @IsOptional()
   @Field(() => GraphQLJSONObject, {
     nullable: true,
   })
-  not?: GraphQLJSONObject;
+  not?:typeof GraphQLJSONObject;
 }
